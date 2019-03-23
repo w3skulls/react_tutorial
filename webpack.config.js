@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const cssModules = 'modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]'
+const LiveReloadPlugin = require('webpack-livereload-plugin')
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -32,6 +33,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({ template: './src/assets/index.html' }),
-    new ExtractTextPlugin('style.css', { allChunks: true })
+    new ExtractTextPlugin('style.css', { allChunks: true }),
+    new LiveReloadPlugin()
   ]
 }

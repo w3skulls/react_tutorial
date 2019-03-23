@@ -1,7 +1,7 @@
 {
-  "name": "react_proyect",
+  "name": "reacttr",
   "version": "1.0.0",
-  "description": "Clon de twitter con React",
+  "description": "Clon de twitter con React para propósitos educativos",
   "main": "/build/app.js",
   "scripts": {
     "production": "webpack -p",
@@ -9,7 +9,7 @@
     "serve": "webpack-dev-server --content-base build/ --colors --progress",
     "start": "npm run build && npm run serve"
   },
-  "author": "Héctor Ochoa (https://www.hectorochoa.es/)",
+  "author": "Carlos Azaustre (https://carlosazaustre.es)",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
