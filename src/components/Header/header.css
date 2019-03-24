@@ -1,0 +1,17 @@
+.root{
+    display: flex;
+    background-color: #2d84cc;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.logo{
+    margin:0;
+    color: rgb(252, 252, 252);
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+}
