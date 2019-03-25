@@ -1,4 +1,5 @@
-console.log('Vengo de app');
+import 'normalize-css';
+import './style.css'
 import React, {Component} from 'react';
 import Header from './../Header'
 import Main from './../Main'
