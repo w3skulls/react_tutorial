@@ -4,8 +4,12 @@ import moment from 'moment';
 
 
 class Message extends Component{
-    constructor(props){
-        super(props); 
+    /*constructor( props ){
+        super( props ); 
+    }*/
+
+    constructor(  ){
+        super(  ); 
     }
 
     render(){
@@ -32,5 +36,6 @@ class Message extends Component{
         )
     }
 }
+
 
 module.exports =  Message;

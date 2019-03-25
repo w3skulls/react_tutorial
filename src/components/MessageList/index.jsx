@@ -11,9 +11,14 @@ class MessageList extends Component{
         return(
             <div>
                 {this.props.messages.map( msg => {
-                    console.info( msg );
+                    //console.info( msg );
                     return (
                         <Message
+                            /**
+                             * Cuando React maneja varios elementos dentro de un array,
+                             * se necesitan distnguir y se debe añadir una "key"
+                             **/
+                            key={msg.id }
                             text={msg.text}
                             picture={msg.picture}
                             displayName={msg.displayName}
