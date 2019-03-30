@@ -18,7 +18,7 @@ class Main extends React.Component{
                 //mensajes del usuario
                 {
                     id: uuid.v4(),
-                    picture: 'https://cdn.icon-icons.com/icons2/1736/PNG/512/4043250-avatar-child-girl-kid_113270.png',
+                    picture: 'https://img.icons8.com/color/48/000000/coach.png',
                     displayName: "Sara May",
                     userName: 'LaNena',
                     text: "Muy buen tutorial de React. El siguente paso react Native. Un saludo a toda la comunidad.",
@@ -26,7 +26,7 @@ class Main extends React.Component{
                 },
                 {
                     id: uuid.v4(),
-                    picture: 'https://cdn.icon-icons.com/icons2/1371/PNG/512/batman_90804.png',
+                    picture: 'https://img.icons8.com/color/48/000000/super-hero-female.png',
                     displayName: "Héctor Ochoa",
                     userName: 'soyBatman',
                     text: "Mensaje de prueba 2",
@@ -39,12 +39,13 @@ class Main extends React.Component{
 
     handleOpenText( event ){
         event.preventDefault();
-        console.log('pulsado');
+        console.log('Mostrando Input al queres twittear.');
         // 1 -.forzamos el método render;
         // 2 -."this" hace referencia al componente "Main"
         this.setState( { openText: true } )
     }
 
+    //Evalúa el estado actual del objeto InputText ( formulario para poder twittear );
     renderOpenText(){
         if( this.state.openText ){
             return <InputText />

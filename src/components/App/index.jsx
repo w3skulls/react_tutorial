@@ -17,7 +17,7 @@ export default class App extends React.Component {
 
       this.state = {
         user: {
-          photoURL: 'https://cdn.icon-icons.com/icons2/1371/PNG/512/robot01_90832.png',
+          photoURL: 'https://img.icons8.com/color/48/000000/geisha.png',
           email: 'hectorochoa.bellon@gmail.com',
           onOpenText: false
         }
