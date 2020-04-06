@@ -1,18 +1,6 @@
-//import App from './components/App'
-
 import React from 'react';
-import { render } from 'react-dom';
+import { render } from 'react-dom'; //destructuring ECMA6
+import App from './components/App/App';
 
-class Test extends React.Component{
-    render(){
-        //alert("Funcionando")
-        return(
-            <h1>App funcionando !!!</h1>
-            
-        )
-    }
-}
-
-
-//Render test
-render(<Test/>, document.getElementById('root'))   
+//Render RootApp :: class, elemento donde renderiza
+render(<App/>, document.getElementById('react-root'))   

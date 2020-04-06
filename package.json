@@ -1,7 +1,7 @@
 {
-  "name": "reacttr",
+  "name": "clon_instagram",
   "version": "1.0.0",
-  "description": "Clon de twitter con React para propósitos educativos",
+  "description": "Clon de twitter con React",
   "main": "/build/app.js",
   "scripts": {
     "production": "webpack -p",
@@ -9,7 +9,7 @@
     "serve": "webpack-dev-server --content-base build/ --colors --progress",
     "start": "npm run build && npm run serve"
   },
-  "author": "Carlos Azaustre (https://carlosazaustre.es)",
+  "author": "Héctor Hektorion",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",

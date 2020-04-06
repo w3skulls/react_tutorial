@@ -1,0 +1,53 @@
+.root{
+    background-color:white;
+    border: 1px solid #00000017;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    font-size: 16pt;
+    font-weight: 200;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user > div{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.displayName{
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.user{
+    color: #c4c5c6;
+}
+
+.date{
+    color: #aaa;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.buttons{
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+.buttons > div {
+    margin: 1rem 3rem 0rem 0rem;
+}

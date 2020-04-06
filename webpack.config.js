@@ -6,11 +6,15 @@ const cssModules = 'modules&importLoaders=1&localIdentName=[name]__[local]__[has
 module.exports = {
   devtool: 'inline-source-map',
 
+  //que webpack esté pendiente de estos archivos
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
 
+  //punto de entrada de la aplicación
   entry: ['./src/index.jsx'],
+
+  //fichero de salida de nuestra aplicación
   output: {
     filename: 'app.js',
     path: './build',
