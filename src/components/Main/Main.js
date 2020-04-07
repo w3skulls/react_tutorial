@@ -1,16 +1,18 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MessageList from '../MessageList/MessageList';
+import ProfileBar from '../ProfileBar/ProfileBar';
 import styles from './main.css';
 
 
 const TAG = '[MAIN] ';
 
-class Main extends Component{
+class Main extends Component {
 
     //Vamos a crear una lista de mensajes;
-    constructor(){
+    constructor(props) {
         super(); //porque hereda de <Component>
 
+        console.log(TAG, props);
         this.state = {
             messages: [
                 {
@@ -36,19 +38,21 @@ class Main extends Component{
                     date: Date.now() - 450546
                 }
 
-                
-            ] 
-        }
 
-        console.log(TAG, "renderizado");
+            ]
+        }
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <main className={styles.main}>
+                <ProfileBar 
+                    username={this.props.user.username}
+                    photoURL={this.props.user.photoURL} 
+                    />
                 <MessageList messages={this.state.messages} />
             </main>
-            
+
         )
     }
 }
